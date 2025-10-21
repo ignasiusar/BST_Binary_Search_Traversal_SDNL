@@ -1,47 +1,40 @@
 public class TreeeNode {
     char data;
-    TreeNode leftNode;
-    TreeNode rightNode;
+    TreeeNode leftNode;  
+    TreeeNode rightNode;
 
-    public TreeNode(int data){
-        this.data=data;
+    public TreeeNode(char data) {  
+        this.data = data;
         this.leftNode = null;
         this.rightNode = null;
     }
-    public boolean isLeaf(){
-        if (leftNode == null && rightNode == null) {
-            return true;
-        }else{
-            return false;
-        }
+
+    public boolean isLeaf() {
+        return leftNode == null && rightNode == null;
     }
-    public int getData() {
+
+    public char getData() {        
         return this.data;
     }
 
-
-    public void setData(int data) {
+    public void setData(char data) {
         this.data = data;
     }
 
-
-    public TreeNode getLeftNode() {
+    public TreeeNode getLeftNode() {
         return this.leftNode;
     }
 
-  
-    public void setLeftNode(TreeNode leftNode) {
+    public void setLeftNode(TreeeNode leftNode) {
         this.leftNode = leftNode;
     }
 
-    
-    public TreeNode getRightNode() {
+    public TreeeNode getRightNode() {
         return this.rightNode;
     }
 
-    
-    public void setRightNode(TreeNode rightNode) {
+
+    public void setRightNode(TreeeNode rightNode) {
         this.rightNode = rightNode;
     }
-    
 }
